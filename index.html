@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazingira AI</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body class="bg-green-200">
+    
+    <div class="container mx-auto px-4">
+        <header class="text-center py-6">
+            <h1 class="text-4xl font-bold text-green-800">Mazingira AI</h1>
+            <p class="text-green-600">Your companion in climate awareness and truth.</p>
+        </header>
+
+        <main class="my-10">
+            <div id="chat-container" class="bg-white rounded shadow p-6">
+                <!-- Chat messages will be appended here -->
+            </div>
+
+            <div class="chat-input mt-4 flex flex-col">
+                <div>
+                    <input type="text" id="userInput" class="border-2 border-green-300 p-2 w-full rounded" required placeholder="Type your message...">
+                    <small class="error-alert hidden text-red-600 font-bold">Fill in this field</small>
+                </div>
+                <button id="sendButton" class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600 mt-2">Send</button>
+            </div>
+            
+            <div id="loading-message" class="hidden text-gray-600 mt-4">Mazingira AI is generating a response...</div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
